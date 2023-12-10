@@ -1,0 +1,235 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: rgba(245, 245, 245);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  /*  background-image: url('../image/maxresdefault.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;*/
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background: linear-gradient(to right, #7EC8E3, #0000FF, #000C66);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dbcbcb; /* Improved contrast for accessibility */
+    padding: 10px 20px;
+    display: block;
+}
+
+nav a:hover {
+    color: #ec0f13;
+}
+
+main {
+    flex-grow: 2;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+aside {
+    flex-basis: 25%;
+   /* background-image: url('../image/0f8d43b36154b449aabfebc1a4f8d244.jpg');*/
+    background-size: cover;
+    padding: 20px;
+}
+
+aside ul li {
+    list-style: none;
+    line-height: 1.5;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #080707;
+}
+
+aside ul li a:hover {
+    color: #ec0f13;
+}
+
+nav>ul>li {
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li ul {
+    width: 150%;
+    position: absolute;
+    z-index: 999;
+    text-align: left;
+    background-color: rgb(0, 34, 128);
+    box-shadow: 0 0 5px rgb(0, 128, 122);
+}
+
+nav ul li ul li a {
+    color: white;
+    padding: 10px;
+    display: block;
+}
+
+nav ul li ul li:hover a:hover {
+    color: rgb(0, 21, 128);
+    background-color: white;
+}
+
+footer {
+    background: linear-gradient(to right, #7EC8E3, #0000FF, #000C66);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.index-img {
+    width: 100%;
+    border-radius: 10px;
+    float: left;
+    margin-right: 20px;
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.image-grid img {
+    height: 200px;
+    width: 200px;
+    border-radius: 8px;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color:  #080707;
+}
+
+.image-grid figure {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input,
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+form input[type="submit"] {
+    background-color: #011302;
+    color: white;
+    cursor: pointer;
+}
+
+.media-item {
+    margin-bottom: 20px;
+}
+
+.media-item iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+}
+
+/* Media Query for small screens */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    aside {
+        background-image: url('../image/nepal_flag.jpg');
+    }
+}
+
+/* Media Query for medium to large screens */
+@media only screen and (min-width: 601px) {
+    body {
+        font-size: 16px;
+    }
+
+    aside {
+       background-image: url('../image/new\ nepal.jpg');
+    }
+}

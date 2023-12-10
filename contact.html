@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>King Prithvi Narayan Shah - Contact</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">->
+</head>
+
+<body>
+    <header>
+        <h1>King Prithvi Narayan Shah</h1>
+    </header>
+
+    <nav>
+      <!-- First level UL for the main -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+      
+     
+        <li>
+            <a href="">Media</a>
+            <!-- Second level UL for the sub menu -->
+            <ul>
+                <li><a href="gallery.html">Gallery</li></a>
+                <li><a href="media.html">Videos</li></a>                     
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+ 
+</nav>
+
+    <div class="wrapper">
+        <main class="content">
+            <section>
+                <h2>Contact</h2>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <label for="date">Select a date:</label>
+                    <input type="date" id="date" name="date" required>
+
+                    <label for="color">Select a color:</label>
+                    <input type="color" id="color" name="color" value="#ff0000" required>
+
+                
+                    <label for="category">Select a category:</label>
+                    <select id="category" name="category" required>
+                        <option value="general">General</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="support">Support</option>
+                    </select>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <aside class="menu">
+            <h2>Additional Information</h2>
+            <ul>
+                <li><a href="https://www.peoplesreview.com.np/2021/01/10/quest-for-the-greater-nepal/">peoplesreview</a></li>
+                <li><a href="http://bossnepal.com/prithvi-narayan-shah-creator-greater-nepal/">BossNepal</a></li>
+                <li><a href="https://www.britannica.com/biography/Prithvi-Narayan-Shah">Britannica</a></li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; Autar Acharya, 2023</p>
+    </footer>
+</body>
+
+</html>
